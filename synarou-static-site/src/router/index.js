@@ -22,7 +22,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/synarou-website/'),
+  history: createWebHistory('/'),
   routes
 })
 
