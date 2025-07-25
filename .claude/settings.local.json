@@ -3,7 +3,8 @@
     "allow": [
       "WebFetch(domain:sites.google.com)",
       "Bash(npm install:*)",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "WebFetch(domain:support.google.com)"
     ],
     "deny": []
   }

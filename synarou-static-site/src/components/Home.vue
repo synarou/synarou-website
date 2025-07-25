@@ -4,60 +4,49 @@
       <div class="container">
         <h1 class="logo">Synarou</h1>
         <p class="tagline">AI를 통해 쉽게 일정을 생성해봐요!</p>
-        <p class="subtitle">나만의 루틴과 일정을 AI와 함께 관리하는 스마트한 방법</p>
+        <p class="subtitle">
+          나만의 루틴과 일정을 AI와 함께 관리하는 스마트한 방법
+        </p>
       </div>
     </header>
 
-    <section class="features">
-      <div class="container">
-        <h2>주요 기능</h2>
-        <div class="feature-grid">
-          <div class="feature-card">
-            <div class="feature-icon">📅</div>
-            <h3>AI 일정 관리</h3>
-            <p>AI가 도와주는 스마트한 일정 생성과 관리로 더욱 효율적인 하루를 만들어보세요.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">🔄</div>
-            <h3>루틴 추적</h3>
-            <p>매일의 루틴을 쉽게 생성하고 추적하여 건강한 습관을 만들어가세요.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">🗓️</div>
-            <h3>Google Calendar 연동</h3>
-            <p>Google Calendar와 완벽하게 연동되어 모든 일정을 한 곳에서 관리할 수 있습니다.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">📝</div>
-            <h3>메모 & 타이머</h3>
-            <p>간편한 메모 기능과 타이머로 작업 효율성을 높이세요.</p>
+    <section class="image-sections">
+      <div class="section-wrapper">
+        <div class="container">
+          <div class="content-row reverse">
+            <div class="text-col">
+              <h2>구글 캘린더와의 연동으로 어디서나 일정관리</h2>
+            </div>
+            <div class="image-col">
+              <img src="/img/home.PNG" alt="Synarou 홈화면" />
+            </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="app-preview">
-      <div class="container">
-        <h2>앱 미리보기</h2>
-        <div class="preview-content">
-          <p>직관적인 인터페이스로 누구나 쉽게 사용할 수 있습니다.</p>
-          <ul>
-            <li>✨ 심플하고 깔끔한 디자인</li>
-            <li>🎯 AI 기반 일정 추천</li>
-            <li>📊 월간 루틴 시각화</li>
-            <li>🔔 스마트 알림 기능</li>
-          </ul>
+      <div class="section-wrapper alt-bg">
+        <div class="container">
+          <div class="content-row">
+            <div class="image-col">
+              <img src="/img/routine.PNG" alt="Synarou 루틴 페이지" />
+            </div>
+            <div class="text-col">
+              <h2>나만의 하루 루틴을 만들고 실천해봐요!</h2>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section class="cta">
-      <div class="container">
-        <h2>지금 시작하세요!</h2>
-        <p>Synarou와 함께 더 나은 하루를 만들어보세요.</p>
-        <div class="download-buttons">
-          <a href="#" class="download-btn">Google Play에서 다운로드</a>
-          <a href="#" class="download-btn">App Store에서 다운로드</a>
+      <div class="section-wrapper">
+        <div class="container">
+          <div class="content-row reverse">
+            <div class="text-col">
+              <h2>쉽게 파악하는 월별 루틴</h2>
+            </div>
+            <div class="image-col">
+              <img src="/img/stat.PNG" alt="Synarou 통계 페이지" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -66,7 +55,8 @@
       <div class="container">
         <p>&copy; 2025 Synarou. All rights reserved.</p>
         <p>
-          <router-link to="/privacy">개인정보처리방침</router-link> | 
+          <router-link to="/privacy">개인정보처리방침</router-link> |
+          <router-link to="/terms">이용약관</router-link> |
           <a href="mailto:synarou.dev@gmail.com">문의하기</a>
         </p>
       </div>
@@ -82,7 +72,8 @@
 }
 
 .home {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
   color: #333;
   line-height: 1.6;
 }
@@ -97,86 +88,117 @@
 .hero-section {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 80px 0;
+  padding: 120px 0;
   text-align: center;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   letter-spacing: -2px;
 }
 
 .tagline {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
   font-weight: 500;
 }
 
 .subtitle {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-/* Features Section */
-.features {
-  padding: 80px 0;
+/* Image Sections */
+.image-sections {
+  padding: 0;
+}
+
+.section-wrapper {
+  padding: 100px 0;
+}
+
+.section-wrapper.alt-bg {
   background: #f8f9fa;
 }
 
-.features h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 50px;
-  color: #333;
-}
-
-.feature-grid {
+.content-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
 }
 
-.feature-card {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+.content-row.reverse .image-col {
+  order: 2;
+}
+
+.content-row.reverse .text-col {
+  order: 1;
+}
+
+.image-col img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.feature-card:hover {
+.image-col img:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-.feature-icon {
-  font-size: 3rem;
+.text-col h2 {
+  font-size: 2.5rem;
   margin-bottom: 20px;
-}
-
-.feature-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
   color: #333;
+  font-weight: 700;
+  line-height: 1.2;
+  word-break: keep-all;
+  white-space: normal;
 }
 
-.feature-card p {
+.section-subtitle {
+  font-size: 1.25rem;
   color: #666;
-  line-height: 1.8;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 /* App Preview Section */
 .app-preview {
-  padding: 80px 0;
+  padding: 100px 0;
+  background: white;
 }
 
 .app-preview h2 {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 50px;
+  font-size: 3rem;
+  margin-bottom: 60px;
+  color: #333;
+  font-weight: 700;
 }
 
 .preview-content {
@@ -186,8 +208,8 @@
 }
 
 .preview-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+  font-size: 1.4rem;
+  margin-bottom: 40px;
   color: #666;
 }
 
@@ -198,57 +220,16 @@
 }
 
 .preview-content li {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  color: #555;
-}
-
-/* CTA Section */
-.cta {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 80px 0;
-  text-align: center;
-}
-
-.cta h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.cta p {
   font-size: 1.2rem;
-  margin-bottom: 40px;
-}
-
-.download-buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.download-btn {
-  background: white;
-  color: #667eea;
-  padding: 15px 30px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.download-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+  color: #555;
 }
 
 /* Footer */
 .footer {
   background: #333;
   color: white;
-  padding: 30px 0;
+  padding: 40px 0;
   text-align: center;
 }
 
@@ -262,8 +243,39 @@
   text-decoration: underline;
 }
 
-/* Responsive */
+/* Desktop Medium */
+@media (max-width: 1440px) {
+  .content-row {
+    gap: 60px;
+  }
+}
+
+/* Desktop Small */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  .logo {
+    font-size: 4rem;
+  }
+
+  .content-row {
+    gap: 40px;
+  }
+
+  .text-col h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Tablet */
 @media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+    min-height: 500px;
+  }
+
   .logo {
     font-size: 2.5rem;
   }
@@ -272,22 +284,130 @@
     font-size: 1.2rem;
   }
 
-  .features h2, .app-preview h2, .cta h2 {
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .section-wrapper {
+    padding: 60px 0;
+  }
+
+  .content-row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .content-row.reverse {
+    direction: ltr;
+  }
+
+  .image-col {
+    order: -1;
+  }
+
+  .text-col h2 {
     font-size: 2rem;
   }
 
-  .feature-grid {
-    grid-template-columns: 1fr;
+  .section-subtitle {
+    font-size: 1.1rem;
   }
 
-  .download-buttons {
-    flex-direction: column;
-    align-items: center;
+  .feature-list li {
+    font-size: 1rem;
   }
 
-  .download-btn {
-    width: 250px;
-    text-align: center;
+  .app-preview {
+    padding: 60px 0;
+  }
+
+  .app-preview h2 {
+    font-size: 2rem;
+  }
+
+  .footer {
+    padding: 25px 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .hero-section {
+    padding: 40px 0;
+    min-height: 400px;
+  }
+
+  .logo {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .section-wrapper {
+    padding: 40px 0;
+  }
+
+  .content-row {
+    gap: 30px;
+  }
+
+  .text-col h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .feature-list li {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+
+  .image-col img {
+    border-radius: 12px;
+  }
+
+  .app-preview {
+    padding: 40px 0;
+  }
+
+  .app-preview h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .preview-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .preview-content li {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    padding: 20px 0;
+    font-size: 0.9rem;
+  }
+
+  .footer a {
+    font-size: 0.9rem;
   }
 }
 </style>
