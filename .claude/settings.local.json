@@ -4,7 +4,9 @@
       "WebFetch(domain:sites.google.com)",
       "Bash(npm install:*)",
       "Bash(npm run dev:*)",
-      "WebFetch(domain:support.google.com)"
+      "WebFetch(domain:support.google.com)",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__get-library-docs"
     ],
     "deny": []
   }
