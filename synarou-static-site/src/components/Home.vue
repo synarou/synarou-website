@@ -56,8 +56,7 @@
         <p>&copy; 2025 Synarou. All rights reserved.</p>
         <p>
           <router-link to="/privacy">개인정보처리방침</router-link> |
-          <router-link to="/terms">이용약관</router-link> |
-          <a href="mailto:synarou.dev@gmail.com">문의하기</a>
+          <router-link to="/terms">이용약관</router-link>
         </p>
       </div>
     </footer>
